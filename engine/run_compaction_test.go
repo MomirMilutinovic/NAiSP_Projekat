@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	lsmtree "github.com/darkokos/NAiSP_Projekat/LSMTree"
-	"github.com/darkokos/NAiSP_Projekat/config"
-	"github.com/darkokos/NAiSP_Projekat/sstable"
+	lsmtree "github.com/MomirMilutinovic/NAiSP_Projekat/LSMTree"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/config"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/sstable"
 )
 
 func TestSTCS(t *testing.T) {

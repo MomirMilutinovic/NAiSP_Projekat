@@ -5,8 +5,8 @@ import (
 	"log"
 	"strings"
 
-	"github.com/darkokos/NAiSP_Projekat/config"
-	"github.com/darkokos/NAiSP_Projekat/sstable"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/config"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/sstable"
 )
 
 // Dobavlja vrednost za prosledjeni kljuc iz baze podataka.

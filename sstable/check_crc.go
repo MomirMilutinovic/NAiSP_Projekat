@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"hash/crc32"
 
-	wal "github.com/darkokos/NAiSP_Projekat/WAL"
+	wal "github.com/MomirMilutinovic/NAiSP_Projekat/WAL"
 )
 
 // Funkcija proverava da li CRC u prosledjenom SSTableEntry-u odgovara ostatku njegovog sadrzaja.

@@ -1,8 +1,8 @@
 package engine
 
 import (
-	compactions "github.com/darkokos/NAiSP_Projekat/Compactions"
-	"github.com/darkokos/NAiSP_Projekat/config"
+	compactions "github.com/MomirMilutinovic/NAiSP_Projekat/Compactions"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/config"
 )
 
 // Funkcija pokrece odgovarajucu kompakciju na osnovu konfiguracije

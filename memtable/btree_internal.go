@@ -3,7 +3,7 @@ package memtable
 import (
 	"fmt"
 
-	"github.com/darkokos/NAiSP_Projekat/BTree"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/BTree"
 )
 
 // Implementacija interfejsa MemTableInternal putem hes mape

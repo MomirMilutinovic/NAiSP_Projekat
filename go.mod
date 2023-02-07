@@ -1,4 +1,4 @@
-module github.com/darkokos/NAiSP_Projekat
+module github.com/MomirMilutinovic/NAiSP_Projekat
 
 go 1.19
 

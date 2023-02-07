@@ -5,8 +5,8 @@ import (
 	"io"
 	"os"
 
-	wal "github.com/darkokos/NAiSP_Projekat/WAL"
-	bloomfilter "github.com/darkokos/NAiSP_Projekat/bloom-filter"
+	wal "github.com/MomirMilutinovic/NAiSP_Projekat/WAL"
+	bloomfilter "github.com/MomirMilutinovic/NAiSP_Projekat/bloom-filter"
 )
 
 // Funkcija pokusava da procita sledeci zapis u SSTabeli na koju pokazuje fajl

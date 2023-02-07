@@ -4,7 +4,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/darkokos/NAiSP_Projekat/utils"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/utils"
 )
 
 type SSTableIterator struct {

@@ -5,7 +5,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/darkokos/NAiSP_Projekat/utils"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/utils"
 )
 
 // Funkcija cita magicni broj iz sst fajla i vraca ga kao povratnu vrednost

@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"time"
 
-	lsmtree "github.com/darkokos/NAiSP_Projekat/LSMTree"
-	"github.com/darkokos/NAiSP_Projekat/config"
+	lsmtree "github.com/MomirMilutinovic/NAiSP_Projekat/LSMTree"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/config"
 )
 
 func STCS() {

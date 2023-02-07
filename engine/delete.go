@@ -1,7 +1,7 @@
 package engine
 
 import (
-	wal "github.com/darkokos/NAiSP_Projekat/WAL"
+	wal "github.com/MomirMilutinovic/NAiSP_Projekat/WAL"
 )
 
 func (engine *DB) Delete(key string) bool {

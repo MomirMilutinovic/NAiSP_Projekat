@@ -5,7 +5,7 @@ import (
 	"io"
 	"os"
 
-	wal "github.com/darkokos/NAiSP_Projekat/WAL"
+	wal "github.com/MomirMilutinovic/NAiSP_Projekat/WAL"
 )
 
 // Struktura koja predstavlja jedan zapis u summary-u

@@ -4,8 +4,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/darkokos/NAiSP_Projekat/config"
-	"github.com/darkokos/NAiSP_Projekat/sstable"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/config"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/sstable"
 )
 
 func (engine *DB) List(prefix string, page_number uint, page_size uint) [][]byte {

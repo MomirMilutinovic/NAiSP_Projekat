@@ -1,9 +1,9 @@
 package engine
 
 import (
-	"github.com/darkokos/NAiSP_Projekat/BTree"
-	"github.com/darkokos/NAiSP_Projekat/memtable"
-	"github.com/darkokos/NAiSP_Projekat/sstable"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/BTree"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/memtable"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/sstable"
 )
 
 // Struktura koja agregira rezultate operacija range scan i list nad vise

@@ -5,7 +5,7 @@ import (
 	"io"
 	"os"
 
-	bloomfilter "github.com/darkokos/NAiSP_Projekat/bloom-filter"
+	bloomfilter "github.com/MomirMilutinovic/NAiSP_Projekat/bloom-filter"
 )
 
 const (

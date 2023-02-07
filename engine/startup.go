@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	wal "github.com/darkokos/NAiSP_Projekat/WAL"
+	wal "github.com/MomirMilutinovic/NAiSP_Projekat/WAL"
 )
 
 // Cita WAL-ove i ponovo primenjuje operacije

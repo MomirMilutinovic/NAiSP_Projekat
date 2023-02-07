@@ -1,6 +1,6 @@
 package engine
 
-import bloomfilter "github.com/darkokos/NAiSP_Projekat/bloom-filter"
+import bloomfilter "github.com/MomirMilutinovic/NAiSP_Projekat/bloom-filter"
 
 func TransformKeyToBloomFilterKey(key string) string {
 	return "bloomfilter." + key

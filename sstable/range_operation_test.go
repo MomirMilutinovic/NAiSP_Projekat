@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/darkokos/NAiSP_Projekat/config"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/config"
 )
 
 func TestRangeScan(t *testing.T) {

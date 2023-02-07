@@ -6,7 +6,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/darkokos/NAiSP_Projekat/config"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/config"
 )
 
 func TestHyperLogLogType(t *testing.T) {

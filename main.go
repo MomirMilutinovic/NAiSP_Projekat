@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/darkokos/NAiSP_Projekat/engine"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/engine"
 )
 
 func main() {

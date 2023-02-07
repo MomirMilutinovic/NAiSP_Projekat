@@ -1,6 +1,6 @@
 package engine
 
-import "github.com/darkokos/NAiSP_Projekat/hyperloglog"
+import "github.com/MomirMilutinovic/NAiSP_Projekat/hyperloglog"
 
 func TransformKeyToHLLKey(key string) string {
 	return "hll." + key

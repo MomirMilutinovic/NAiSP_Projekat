@@ -6,9 +6,9 @@ import (
 	"io"
 	"os"
 
-	bloomfilter "github.com/darkokos/NAiSP_Projekat/bloom-filter"
-	"github.com/darkokos/NAiSP_Projekat/config"
-	"github.com/darkokos/NAiSP_Projekat/merkleTree"
+	bloomfilter "github.com/MomirMilutinovic/NAiSP_Projekat/bloom-filter"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/config"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/merkleTree"
 )
 
 const (

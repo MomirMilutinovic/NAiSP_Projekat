@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/darkokos/NAiSP_Projekat/config"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/config"
 )
 
 func TestSSTableSingleFile(t *testing.T) {

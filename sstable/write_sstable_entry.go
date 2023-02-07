@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"os"
 
-	wal "github.com/darkokos/NAiSP_Projekat/WAL"
+	wal "github.com/MomirMilutinovic/NAiSP_Projekat/WAL"
 )
 
 // Funkcija pise red SSTable-a koji cuva prosledjeni

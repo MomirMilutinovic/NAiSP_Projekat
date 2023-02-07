@@ -1,7 +1,7 @@
 package memtable
 
 import (
-	skiplist "github.com/darkokos/NAiSP_Projekat/SkipList"
+	skiplist "github.com/MomirMilutinovic/NAiSP_Projekat/SkipList"
 )
 
 const (

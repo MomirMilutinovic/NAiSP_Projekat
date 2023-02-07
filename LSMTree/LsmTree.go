@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/darkokos/NAiSP_Projekat/config"
-	"github.com/darkokos/NAiSP_Projekat/memtable"
-	"github.com/darkokos/NAiSP_Projekat/sstable"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/config"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/memtable"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/sstable"
 )
 
 // Pravi LSMTree sa memtabelom,maksimalnim nivoom i trenutnim najvecim nivoom

@@ -1,9 +1,9 @@
 package engine
 
 import (
-	"github.com/darkokos/NAiSP_Projekat/LRU_cache"
-	"github.com/darkokos/NAiSP_Projekat/config"
-	"github.com/darkokos/NAiSP_Projekat/memtable"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/LRU_cache"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/config"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/memtable"
 )
 
 type DB struct {

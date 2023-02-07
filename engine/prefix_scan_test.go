@@ -3,7 +3,7 @@ package engine
 import (
 	"testing"
 
-	"github.com/darkokos/NAiSP_Projekat/config"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/config"
 )
 
 func TestPrefixScan(t *testing.T) {

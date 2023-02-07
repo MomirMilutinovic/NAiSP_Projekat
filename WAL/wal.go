@@ -15,7 +15,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/darkokos/NAiSP_Projekat/config"
+	"github.com/MomirMilutinovic/NAiSP_Projekat/config"
 	"github.com/edsrzf/mmap-go"
 )
 
