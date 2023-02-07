@@ -25,9 +25,9 @@ func (engine *DB) ReplayWal() {
 
 	for _, walEntry := range walEntries {
 		if !walEntry.Tombstone {
-			engine.Put(string(walEntry.Key), walEntry.Value)
+			engine.PutNoRateLimit(string(walEntry.Key), walEntry.Value)
 		} else {
-			engine.Delete(string(walEntry.Key))
+			engine.DeleteNoRateLimit(string(walEntry.Key))
 		}
 	}
 }

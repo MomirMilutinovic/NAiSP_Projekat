@@ -49,7 +49,7 @@ func (tbm *TokenBucketManager) NewTokenBucket(userID string, rate int, capacity 
 
 	go tb.fill(rate, tbm)
 
-	b := tbm.db.Put(userID, []byte(tb.toJSON()))
+	b := tbm.db.PutNoRateLimit(userID, []byte(tb.toJSON()))
 	if !b {
 		tb.Stop <- struct{}{}
 		return nil, false // Neuspesno spremanje token bucketa u bazu podataka"
@@ -62,7 +62,7 @@ func (tbm *TokenBucketManager) GetTokenBucket(rate int, userID string) (*TokenBu
 	tbm.mu.Lock()
 	defer tbm.mu.Unlock()
 
-	data := tbm.db.Get(userID)
+	data := tbm.db.GetNoRateLimit(userID)
 	if data == nil {
 		return nil, false // Token bucket ne postoji za korisnika: userID
 	}
@@ -85,7 +85,7 @@ func (tb *TokenBucket) fill(rate int, tbm *TokenBucketManager) {
 			case tb.Tokens <- struct{}{}:
 			default:
 			}
-			tbm.db.Put(tb.UserID, []byte(tb.toJSON()))
+			tbm.db.PutNoRateLimit(tb.UserID, []byte(tb.toJSON()))
 		case <-tb.Stop:
 			return
 		}
@@ -98,9 +98,7 @@ func (tb *TokenBucket) Take(tbm *TokenBucketManager) bool {
 		tbm.mu.Lock()
 		defer tbm.mu.Unlock()
 		data, _ := json.Marshal(tb)
-		tbm.db.Rate_limiting_enabled = false
-		tbm.db.Put(tb.UserID, []byte(data))
-		tbm.db.Rate_limiting_enabled = true
+		tbm.db.PutNoRateLimit(tb.UserID, []byte(data))
 		return true
 	default:
 		return false

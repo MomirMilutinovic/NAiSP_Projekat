@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 
 	"github.com/MomirMilutinovic/NAiSP_Projekat/engine"
 )
@@ -19,6 +20,8 @@ func main() {
 	db.Put("Humidity/Novi Sad/2023-02-06", []byte{5})
 	db.Put("Humidity/Belgrade/2023-02-06", []byte{3})
 
+	time.Sleep(2 * time.Second)
+
 	db.Put("MaxTemp/Novi Sad/2023-02-07", []byte{1})
 	db.Put("MaxTemp/Belgrade/2023-02-07", []byte{2})
 	db.Put("Humidity/Novi Sad/2023-02-07", []byte{5})
@@ -28,6 +31,8 @@ func main() {
 	db.Put("MaxTemp/Belgrade/2023-07-07", []byte{32})
 	db.Put("Humidity/Novi Sad/2023-07-07", []byte{1})
 	db.Put("Humidity/Belgrade/2023-07-07", []byte{0})
+
+	time.Sleep(time.Second)
 
 	fmt.Println("Maksimalne temperature u Novom Sadu", db.List("MaxTemp/Novi Sad", 1, 2))
 	fmt.Println("Maksimalne temperature u Novom Sadu str 2.", db.List("MaxTemp/Novi Sad", 2, 2))
