@@ -7,15 +7,16 @@ import (
 )
 
 const (
-	SST_FOOTER_SIZE = 4 * 8
+	SST_FOOTER_SIZE = 5 * 8
 )
 
 // Struktura koja predstavlja Footer SSTabele koja se pise kao jedan fajl
 type SSTFooter struct {
-	IndexOffset    int64 // Pozicija na kojoj pocinje indeks
-	SummaryOffset  int64 // Pozicija na kojoj pocinje summary
-	FilterOffset   int64 // Pozicija na kojoj pocinje filter
-	MetadataOffset int64 // Pozicija na kojoj pocinje metadata
+	IndexOffset           int64 // Pozicija na kojoj pocinje indeks
+	SummaryOffset         int64 // Pozicija na kojoj pocinje summary
+	FilterOffset          int64 // Pozicija na kojoj pocinje filter
+	MetadataOffset        int64 // Pozicija na kojoj pocinje metadata
+	CompressionInfoOffset int64 // Pozicija na kojoj pocinje CompressionInfo
 	// Napomena: metadata se zavrsava na <velicina fajla> - SSTABLE_MAGIC_NUMBER_SIZE - SST_FOOTER_SIZE
 }
 
