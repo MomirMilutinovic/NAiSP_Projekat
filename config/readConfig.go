@@ -17,6 +17,7 @@ var Configuration Config = Config{
 	CacheSize:           4,
 	RateLimit:           999999, // Broj zahteva po sekundi
 	CompactionStrategy:  "size_tiered",
+	ChunkLength:         64000,
 }
 
 var DefaultConfiguration Config = Config{
@@ -29,6 +30,7 @@ var DefaultConfiguration Config = Config{
 	CacheSize:           4,
 	RateLimit:           999999,
 	CompactionStrategy:  "size_tiered",
+	ChunkLength:         64000,
 }
 
 type Config struct {
@@ -41,6 +43,7 @@ type Config struct {
 	CacheSize           uint64 `yaml:"cache_size"`             // Broj elemenata u kesu
 	RateLimit           uint64 `yaml:"rate_limit"`             // Rate limit za token bucket
 	CompactionStrategy  string `yaml:"compaction_strategy"`
+	ChunkLength         uint64 `yaml:"chunk_length"` // Kolicina podataka u bajtovima koja se smesta u jedan kompresovani blok
 }
 
 func ReadConfig() {
